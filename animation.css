@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    animation: toRight 3s linear;
+    animation-iteration-count: 10;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+}
+
+/* .btn{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background: slateblue;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+} */
+
+@keyframes toRight{
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(300px) rotateX(360deg) skew(40deg);
+    }
+    50%{
+        transform: translateX(300px) translateY(300px);
+        opacity: 0%;
+    }
+    75%{
+        transform: translateX(300px) translateY(0px) rotateY(360deg);
+    }
+    100%{
+        transform: translateY(0px) translateX(0px);
+    }
+}

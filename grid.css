@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+}
+
+.container{
+    width: 50%;
+    height: 550px;
+    margin: 0px auto 0px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1.8fr 0.9fr;
+    grid-gap: 10px;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 1fr;
+    background-color: blue;
+}
+
+.header-logo{
+    background-color: yellow;
+}
+
+.nav{
+    background-color: turquoise;
+}
+
+.main{
+    background-color: chartreuse;
+}
+.footer{
+    background-color: crimson;
+}

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    height: auto;
+}
+
+.header{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    position: relative;
+}
+
+.header__text{
+    width: 50%;
+    height: 100%;
+    background-color: #F2AE4D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+}
+
+.text{
+    width: 480px;
+}
+
+.text > h1{
+    font-size: 48px;
+    line-height: 56px;
+    color: #011F3A;
+    font-weight: normal;
+    width: 100%;
+}
+
+.header__image{
+    width: 100%;
+    height: 100%;
+    background-image: url(img.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-color: #F2AE4D;
+}
+
+.navigation__bar{
+    width: 100%;
+    height: 61px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    background-color: #EEEEEE;
+}
+
+.wrapper{
+    width: 80%;
+    height: auto;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1162px 914px 766px;
+}
+
+.sponsors{
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+}
+
+.shopify{
+    width: 30%;
+    height: 30%;
+    margin: 50px;
+    background-image: url(Rectangle.png);
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-color: #fff
+}
+
+.products{
+    height: 864px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 4px;
+}
+
+.Items{
+    background-color: #fff;
+}
+
+.items__image{
+    width: 100%;
+    height: 302px;
+}
+
+.product_label{
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+.product_label :is(h2){
+    padding: 30px 0px;
+    flex: 1;
+}
+
+.product_label :is(button){
+    background-color: #3D5675;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.text_one{
+    width: 50%;
+    flex: 1;
+    padding: 0px 20px;
+}
+
+.items__text h4{
+    padding: 0px 20px;
+}
+
+.item_description{
+    display: flex;
+}
+
+.item_description p:last-child{
+    padding: 0px 70px;
+}
